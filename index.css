@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+}
+header{
+font-size: 50px;
+  max-height: 70px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: satisfy;
+}
+.rgb{
+  color: #000;
+  filter: blur(1);
+  font-weight: 100;
+  text-shadow: 0 0 1px rgb(23, 214, 214),
+    0 0 2px rgb(23, 214, 214),
+    0 0 3px rgb(23, 214, 214),
+    0 0 4px rgb(23, 214, 214),
+    0 0 5px rgb(23, 214, 214);
+}
+.rgb div{
+  margin: 50px;
+  color: #fff;
+  box-shadow: 0 0 10px rgb(23, 214, 214),
+    0 0 20px rgb(23, 214, 214),
+    0 0 40px rgb(23, 214, 214),
+    0 0 60px rgb(23, 214, 214),
+    0 0 80px rgb(23, 214, 214);
+ animation: animate 10s linear infinite;
+}
+@keyframes  animate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.quote{
+  margin: 50px;
+  padding: 50px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 1),
+  0 0 2px rgba(255, 255, 255, 1),
+  0 0 3px rgba(255, 255, 255, 1),
+  0 0 4px rgba(255, 255, 255, 1),
+  0 0 5px rgba(255, 255, 255, 1);
+  color: #000;
+}
+.quote h1{
+  font-size: 30px;
+}
+#Profile{
+  display: flex;
+  margin: 50px;
+}
+#Profile img{
+  width: 23%;
+  margin: 60px;
+  border-radius: 16%;
+  border: solid whitesmoke;
+}
+#Profile h2{
+  margin: 100px;
+  font-size: 40px;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.moveable{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 70px;
+
+}
+.moveable ol{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  box-shadow: rgb(36, 177, 243);
+  text-transform: uppercase;
+}
+#Project{
+  padding-bottom: 100px;
+}
+footer{
+   
+	background: rgb(66, 63, 63);
+	top: 0;
+	left: 0;
+	height: 21vh;
+	width: 100%;
+	padding: 0 136px;
+	transition: 1s;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+  font-size: 30px;
+}
+nav
+{
+	padding: 0px 173px;
+	display: flex;
+}
+nav ul
+{
+	margin: 0;
+	display: flex;
+	transition: 0.25s;
+	transform: translateX(100px);
+	
+}
+.md-tile{
+  list-style: none;
+text-decoration: none;
+font-size: 20px;
+}
+.clicker{
+  padding-top: 18px;
+}
+
+nav ul li
+{
+	list-style: none;
+}
+nav ul li a
+{
+color: #fff;
+	display:inline-block;
+	padding: 0px 15px;
+	text-decoration: none;
+	
+}
+nav ul li a:hover
+{
+	color:rgb(233, 13, 13) ;
+	border-radius: 5px;
+    box-shadow: 0 0 5px rgb(233, 13, 13),
+                0 0 5px rgb(233, 13, 13);
+                animation: animate 10s linear infinite;
+			
+}
+
+@media (max-width:1054px) {
+  #Profile img{
+    width: 30%;
+    margin: 25px;
+    max-height: 205px;
+    margin-top: 40px;
+  }
+  #Profile h2{
+    margin: 0px;
+    font-size: 23px;
+    padding: 0px;
+  }
+  nav{
+    display: grid;
+    padding: 0px;
+  }
+  footer{
+  height: 70vh;
+  }
+}
+@media (max-width:700px) {
+  #Profile{
+    display: grid;
+  }
+  #Profile img{
+    width: 25%;
+    margin: 20px;
+    max-height: 205px;
+    margin-top: 38px;
+    margin-left: 214px;
+  }
+  #Profile h2{
+    margin: 0px;
+    font-size:25px;
+    padding: 0px;
+  }
+  .moveable{
+    font-size: 30px;
+  }
+  .moveable ol {
+    font-size: 20px;
+  }
+
+}
+@media (max-width:542px){
+  #Profile img{
+  margin-left:  80px
+}
+#Profile img{
+  width: 25%;
+  margin: 20px;
+  max-height: 205px;
+  margin-top: 38px;
+  margin-left: 114px;
+}
+#Profile h2{
+  font-size:15px;
+}
+footer{
+  padding: 0px;
+  font-size: 16px;
+  width: 100%;
+  height: 42vh;
+    }
+  nav{
+    display: grid;
+    padding-right: 92px;
+  }
+  
+}
